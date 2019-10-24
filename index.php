@@ -1,3 +1,24 @@
+<?php 
+	session_start(); 
+
+	require('scripts/langswitcher.php');
+	require('scripts/db_connector.php');
+	require('scripts/get_base_info.php');
+
+	change_language(); //change language based on request on session
+	$connection = connect_to_db(); // create connection to db
+	
+	// making some kind of cache
+	if (!isset($_SESSION['base_info']))
+		$_SESSION['base_info'] = get_base_info_from_db($connection); // get base info from db
+
+	// prettify vars
+	$lang = $_SESSION['lang'];
+	$base_info = $_SESSION['base_info'];
+
+	$connection = null; //close db connection
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,7 +26,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Michael Boiko | Just a Dev</title>
+	<meta name="description" content="Free Web tutorials">
+  	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  	<meta name="author" content="John Doe">
+
+	<title><?php echo get_field($base_info, 'title', $lang); ?></title>
 
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">	
@@ -26,16 +51,17 @@
 </head>
 <body>
 	<main>
-		<div class="lang">
-			<a href="">EN</a>
-			<a href="">UA</a>
-			<a href="">RU</a>
-		</div>
-		<div class="intro">Hello, I'm Michael!</div>
-		<div class="tagline">Trying to become a developer since 2012...</div>
-		<div class="tagline">Web | GameDev | ML | Math Modeling</div>
+		<!-- Show Lang Switcher -->
+		<?php echo lang_switcher(); ?>
+
+		<!-- Show Base Info On Correct Language -->
+		<div class="intro"><?php echo get_field($base_info, 'intro', $lang); ?></div>
+		<div class="tagline"><?php echo get_field($base_info, 'tagline', $lang); ?></div>
+		<div class="tagline"><?php echo get_field($base_info, 'tech_list', $lang); ?></div>
 		<hr class="divider" />
-		<div class="tagline">Some projects examples</div>
+		<div class="tagline"><?php echo get_field($base_info, 'projects_intro', $lang); ?></div>
+
+		<!-- Show Projects On Correct Language -->
 		<div class="projects-list tagline">
 			<a target="_blank" href="https://mono.net.ua/">Mono</a>
 			<a target="_blank" href="https://play.google.com/store/apps/details?id=com.Craft.ItsLoveRus">It`s love</a>
@@ -44,6 +70,8 @@
 			<a target="_blank" href="http://amadi.in.ua/">Amadi</a>
 			<a target="_blank" href="http://whiteroom.com.ua/">WhiteRoom</a>
 		</div>
+
+		<!-- Show Social Links -->
 		<hr class="divider" />
 		<!-- Find your icons from here - https://fontawesome.com/icons?d=gallery&s=brands -->
 		<div class="icons-social">

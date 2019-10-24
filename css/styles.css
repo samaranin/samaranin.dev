@@ -105,11 +105,12 @@ main > .tagline {
 	cursor: pointer;
 }
 
-.projects-list > a:hover {
+.projects-list  > a:hover,
+.lang > a:hover,
+.selected {
 	background-color: #fff;
 	color: #485564;
 }
-
 
 .projects-list > a {
 	text-decoration: none;
@@ -118,4 +119,22 @@ main > .tagline {
 
 .divider {
 	width: 75%;
+}
+
+.projects-list > a:hover + .info-wrapper > .additional-info {
+	display: inline-block;
+}
+
+.info-wrapper {
+	position: absolute;
+	display: inline-block;
+	padding-top: 15px;
+}
+
+.additional-info {
+	padding: 10px;
+	/* display: none; */
+	border: 2px solid #fff;
+	border-radius: 5px;
+	text-align: left;
 }
