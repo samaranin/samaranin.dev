@@ -1,23 +1,4 @@
-<?php 
-	session_start(); 
-
-	require('scripts/langswitcher.php');
-	require('scripts/db_connector.php');
-	require('scripts/get_base_info.php');
-
-	change_language($lang_list); //change language based on request on session
-	$connection = connect_to_db(); // create connection to db
-	
-	// making some kind of cache
-	if (!isset($_SESSION['base_info']))
-		$_SESSION['base_info'] = get_base_info_from_db($connection); // get base info from db
-
-	// prettify vars
-	$lang = $_SESSION['lang'];
-	$base_info = $_SESSION['base_info'];
-
-	$connection = null; //close db connection
-?>
+<?php require('scripts/initializer.php'); ?>
 
 <!DOCTYPE html>
 <html>
@@ -63,8 +44,8 @@
 
 		<!-- Show Projects On Correct Language -->
 		<div class="projects-list tagline">
-			<a class="tooltip" target="_blank" href="https://mono.net.ua/">Mono</a>
-			<a class="tooltip" target="_blank" href="https://play.google.com/store/apps/details?id=com.Craft.ItsLoveRus">It`s love</a>
+			<a target="_blank" href="https://mono.net.ua/">Mono</a>
+			<a target="_blank" href="https://play.google.com/store/apps/details?id=com.Craft.ItsLoveRus">It`s love</a>
 			<a target="_blank" href="http://samaranin.pythonanywhere.com/">Math Modeling</a>
 			<a target="_blank" href="https://hamster.samaranin.dev/">Tesla Hamster 3.0</a>
 			<a target="_blank" href="http://amadi.in.ua/">Amadi</a>
