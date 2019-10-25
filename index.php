@@ -26,9 +26,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<meta name="description" content="Free Web tutorials">
-  	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
-  	<meta name="author" content="John Doe">
+	<meta name="description" content="Developer`s homepage and portfolio">
+  	<meta name="keywords" content="Development,Web,GameDev,Machine Learning,Math Modeling">
+  	<meta name="author" content="Michael Boiko">
 
 	<title><?php echo get_field($base_info, 'title', $lang); ?></title>
 
