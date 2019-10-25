@@ -5,7 +5,7 @@
 	require('scripts/db_connector.php');
 	require('scripts/get_base_info.php');
 
-	change_language(); //change language based on request on session
+	change_language($lang_list); //change language based on request on session
 	$connection = connect_to_db(); // create connection to db
 	
 	// making some kind of cache
@@ -52,7 +52,7 @@
 <body>
 	<main>
 		<!-- Show Lang Switcher -->
-		<?php echo lang_switcher(); ?>
+		<?php echo lang_switcher($lang_list); ?>
 
 		<!-- Show Base Info On Correct Language -->
 		<div class="intro"><?php echo get_field($base_info, 'intro', $lang); ?></div>
@@ -63,8 +63,8 @@
 
 		<!-- Show Projects On Correct Language -->
 		<div class="projects-list tagline">
-			<a target="_blank" href="https://mono.net.ua/">Mono</a>
-			<a target="_blank" href="https://play.google.com/store/apps/details?id=com.Craft.ItsLoveRus">It`s love</a>
+			<a class="tooltip" target="_blank" href="https://mono.net.ua/">Mono</a>
+			<a class="tooltip" target="_blank" href="https://play.google.com/store/apps/details?id=com.Craft.ItsLoveRus">It`s love</a>
 			<a target="_blank" href="http://samaranin.pythonanywhere.com/">Math Modeling</a>
 			<a target="_blank" href="https://hamster.samaranin.dev/">Tesla Hamster 3.0</a>
 			<a target="_blank" href="http://amadi.in.ua/">Amadi</a>
@@ -80,6 +80,12 @@
 			<a target="_blank" href="https://facebook.com/samaranin"><i class="fab fa-facebook"></i></a>
 			<a target="_blank" href="https://www.linkedin.com/in/samaranin"><i class="fab fa-linkedin"></i></a>
 		</div>
+
+		<span class="tooltip-text" style="display: none;">
+			<span><b>Technology: </b>PHP | PHP | PHP</span><br />
+			<span><b>Description: </b>Short Description</span><br />
+			<span><b>Link: </b>https://mono.net.ua</span>
+		</span>
 	</main>
 </body>
 </html>
