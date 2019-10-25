@@ -45,7 +45,7 @@
 		<!-- Show Projects On Correct Language -->
 		<div class="projects-list tagline">
 			<a target="_blank" href="https://mono.net.ua/">Mono</a>
-			<a target="_blank" href="https://play.google.com/store/apps/details?id=com.Craft.ItsLoveRus">It`s love</a>
+			<a target="_blank" href="https://androidappsapk.co/detail-its-love-%D1%82%D0%B2%D0%BE%D0%B9-%D0%BF%D0%B5%D1%80%D0%B2%D1%8B%D0%B9-%D1%88%D0%B0%D0%B3-%D0%BD%D0%B0-%D0%B2%D1%81%D1%82%D1%80%D0%B5%D1%87%D1%83-%D0%BB%D1%8E%D0%B1%D0%B2%D0%B8/">It`s love</a>
 			<a target="_blank" href="http://samaranin.pythonanywhere.com/">Math Modeling</a>
 			<a target="_blank" href="https://hamster.samaranin.dev/">Tesla Hamster 3.0</a>
 			<a target="_blank" href="http://amadi.in.ua/">Amadi</a>
