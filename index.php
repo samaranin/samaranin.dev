@@ -50,6 +50,7 @@
 			<a target="_blank" href="https://hamster.samaranin.dev/">Tesla Hamster 3.0</a>
 			<a target="_blank" href="http://amadi.in.ua/">Amadi</a>
 			<a target="_blank" href="http://whiteroom.com.ua/">WhiteRoom</a>
+			<a target="_blank" href="https://lib-helper.samaranin.dev/">NUWEE library helper</a>
 		</div>
 
 		<!-- Show Social Links -->
