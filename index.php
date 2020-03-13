@@ -44,30 +44,25 @@
 
 		<!-- Show Projects On Correct Language -->
 		<div class="projects-list tagline">
-			<a target="_blank" href="https://mono.net.ua/">Mono</a>
-			<a target="_blank" href="https://androidappsapk.co/detail-its-love-%D1%82%D0%B2%D0%BE%D0%B9-%D0%BF%D0%B5%D1%80%D0%B2%D1%8B%D0%B9-%D1%88%D0%B0%D0%B3-%D0%BD%D0%B0-%D0%B2%D1%81%D1%82%D1%80%D0%B5%D1%87%D1%83-%D0%BB%D1%8E%D0%B1%D0%B2%D0%B8/">It`s love</a>
-			<a target="_blank" href="http://samaranin.pythonanywhere.com/">Math Modeling</a>
-			<a target="_blank" href="https://hamster.samaranin.dev/">Tesla Hamster 3.0</a>
-			<a target="_blank" href="http://amadi.in.ua/">Amadi</a>
-			<a target="_blank" href="http://whiteroom.com.ua/">WhiteRoom</a>
-			<a target="_blank" href="https://lib-help.samaranin.dev/">NUWEE library helper</a>
+			<a target="_blank" rel = ”noopener” href="https://mono.net.ua/">Mono</a>
+			<a target="_blank" rel = ”noopener” href="https://androidappsapk.co/detail-its-love-%D1%82%D0%B2%D0%BE%D0%B9-%D0%BF%D0%B5%D1%80%D0%B2%D1%8B%D0%B9-%D1%88%D0%B0%D0%B3-%D0%BD%D0%B0-%D0%B2%D1%81%D1%82%D1%80%D0%B5%D1%87%D1%83-%D0%BB%D1%8E%D0%B1%D0%B2%D0%B8/">It`s love</a>
+			<a target="_blank" rel = ”noopener” href="http://samaranin.pythonanywhere.com/">Math Modeling</a>
+			<a target="_blank" rel = ”noopener” href="https://hamster.samaranin.dev/">Tesla Hamster 3.0</a>
+			<a target="_blank" rel = ”noopener” href="http://amadi.in.ua/">Amadi</a>
+			<a target="_blank" rel = ”noopener” href="http://whiteroom.com.ua/">WhiteRoom</a>
+			<a target="_blank" rel = ”noopener” href="https://lib-help.samaranin.dev/">NUWEE library helper</a>
+			<a target="_blank" rel = ”noopener” href="https://fugas.space/">FUGAS</a>
 		</div>
 
 		<!-- Show Social Links -->
 		<hr class="divider" />
 		<!-- Find your icons from here - https://fontawesome.com/icons?d=gallery&s=brands -->
 		<div class="icons-social">
-			<a target="_blank" href="https://github.com/samaranin"><i class="fab fa-github"></i></a>
-			<a target="_blank" href="https://twitter.com/samaranin"><i class="fab fa-twitter"></i></a>
-			<a target="_blank" href="https://facebook.com/samaranin"><i class="fab fa-facebook"></i></a>
-			<a target="_blank" href="https://www.linkedin.com/in/samaranin"><i class="fab fa-linkedin"></i></a>
+			<a target="_blank" rel = ”noopener” href="https://github.com/samaranin"><i class="fab fa-github"></i></a>
+			<a target="_blank" rel = ”noopener” href="https://twitter.com/samaranin"><i class="fab fa-twitter"></i></a>
+			<a target="_blank" rel = ”noopener” href="https://facebook.com/samaranin"><i class="fab fa-facebook"></i></a>
+			<a target="_blank" rel = ”noopener” href="https://www.linkedin.com/in/samaranin"><i class="fab fa-linkedin"></i></a>
 		</div>
-
-		<span class="tooltip-text" style="display: none;">
-			<span><b>Technology: </b>PHP | PHP | PHP</span><br />
-			<span><b>Description: </b>Short Description</span><br />
-			<span><b>Link: </b>https://mono.net.ua</span>
-		</span>
 	</main>
 </body>
 </html>
